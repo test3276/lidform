@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    border: 10px solid #1bc2e8; /* Добавляем рамку вокруг формы */
+    padding: 20px; /* Добавляем отступ внутри рамки */
+    width: 90%; /* Устанавливаем ширину контейнера формы */
+    max-width: 300px; /* Устанавливаем максимальную ширину контейнера */
+    margin: 0 auto; /* Располагаем контейнер по центру */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%; /* Растягиваем поля ввода на всю доступную ширину */
+    box-sizing: border-box; /* Учитываем padding и border внутри ширины элемента */
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0.7; /* Делаем текст на полях полупрозрачным */
+}
+
+.or {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em; /* Увеличиваем размер "Или" */
+    color: black; /* Черный цвет */
+}
+
+button {
+    width: 100%; /* Растягиваем кнопку на всю доступную ширину */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Медиазапрос для устройств с максимальной шириной экрана 600px */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+}
